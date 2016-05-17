@@ -15,7 +15,7 @@ import javax.swing.JMenuBar;
 import java.awt.Component;
 import javax.swing.JTextArea;
 import javax.swing.border.LineBorder;
-public class MainScreen extends JFrame implements ActionListener {
+public class GameBoard extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
 	JButton btnOnGameBoard[] = new JButton[10];
@@ -45,7 +45,7 @@ public class MainScreen extends JFrame implements ActionListener {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainScreen frame = new MainScreen();
+					GameBoard frame = new GameBoard();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -57,7 +57,7 @@ public class MainScreen extends JFrame implements ActionListener {
 	/**
 	 * Create the frame.
 	 */
-	public MainScreen() {
+	public GameBoard() {
 		setTitle("Tic Tac Toe");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 524, 304);
